@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 1</title>
+</head>
+<body>
+    <div id = "task_1">
+        <nav>
+            <a href="#task_1">Zadatak 1</a> |
+            <a href="#task_2">Zadatak 2</a> |
+            <a href="#task_3">Zadatak 3</a> |
+            <a href="#task_4">Zadatak 4</a> |
+            <a href="#task_5">Zadatak 5</a>
+        </nav>
+        <hr>
+    </div>
+    <div id = "task_2">
+        <h1>CV</h1>
+        <h2>Ime: Mirko Miljanic</h2>
+        <p>Rodjen u Niksicu 1993. godine. Zavrsion Elektrotehnicki fakultet u Podgorici. Voli NBA i NFL. Poceo da uci programiranje.</p>
+        <a href="https://www.facebook.com/tezim.da.lezim" target="_blank">Mirko Miljanic na Facebook-u</a>
+        <h4>Programski jezici sa kojima se do sad susretao:</h4>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ul>
+        <h4>Radio na sledecim mjestima:</h4>
+        <ol type="a">
+            <li>FM Mont doo</li>
+            <li>CV Hotel</li>
+            <li><strong>Google</strong></li>
+        </ol>
+        <strong>Mirkova slika:</strong>
+        <br>
+        <img src="./images/mirko.jpg" alt="Mirkova slika" height="320" width="240">
+    </div>
+    <hr>
+    <div id = "task_3">
+        <table>
+            <caption>Favourite movies</caption>
+            <tr>
+                <th>Movie</th>
+                <th>Description</th>
+                <th>Genre</th>
+                <th>Release year</th>
+                <th>Image</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Twelve Monkeys</td>
+                <td>In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet.</td>
+                <td>Mystery, Sci-Fi, Thriller</td>
+                <td>1995</td>
+                <td><img src = ./images/12_monkeys.jpg alt = "Twelve Monkeys"></td>
+                <td><a href = "https://www.imdb.com/title/tt0114746/" target="_blank">https://www.imdb.com/title/tt0114746/</a></td>
+            </tr>
+            <tr>
+                <td>Into the wild</td>
+                <td>After graduating from Emory University, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity and hitchhikes to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters that shape his life</td>
+                <td>Adventure, Biography, Drama </td>
+                <td>2007</td>
+                <td><img src = "./images/into_the_wild.jpg" alt="Into the wild"></td>
+                <td><a href = "https://www.imdb.com/title/tt0758758/" target="_blank">https://www.imdb.com/title/tt0758758/</a></td>
+            </tr>
+            <tr>
+                <td>Incendies</td>
+                <td>Twins journey to the Middle East to discover their family history and fulfill their mother's last wishes.</td>
+                <td> Drama, Mystery, War </td>
+                <td>2010</td>
+                <td><img src = "./images/incendies.jpg" alt="Incendies"></td>
+                <td><a href = "https://www.imdb.com/title/tt1255953/" target="_blank">https://www.imdb.com/title/tt1255953/</a></td>
+            </tr>
+            <tr>
+                <td>The Secret in Their Eyes</td>
+                <td>A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior - both of which still haunt him decades later. </td>
+                <td> Drama, Mystery, Romance</td>
+                <td>2009</td>
+                <td><img src = "./images/the_secret_in_their_eyes.jpg" alt="The Secret in Their Eyes"></td>
+                <td><a href = "https://www.imdb.com/title/tt1305806/" target="_blank">https://www.imdb.com/title/tt1305806/</a></td>
+            </tr>
+            <tr>
+                <td>City of God</td>
+                <td>In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.</td>
+                <td> Crime, Drama </td>
+                <td>2002</td>
+                <td><img src = "./images/city_of_god.jpg" alt="City of God"></td>
+                <td><a href = "https://www.imdb.com/title/tt0317248/" target="_blank">https://www.imdb.com/title/tt0317248/</a></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id = "task_4">
+        <form method="GET">
+            <fieldset>
+                <legend>Contact information</legend>
+                First name:
+                <input type="text" name="first_name" required>
+                <br>
+                Last name:
+                <input type="text" name="last_name" required>
+                <br>
+                Email:
+                <input type="email" name="email" required>
+                <br>
+                Phone:
+                <input type="tel" name="phone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Position</legend>
+                Position you are applying for: <br>
+                <select name="positions" size="4" multiple required>
+                    <option value="nodeJS">Backend NodeJS</option>
+                    <option value="python" selected>Backend Python</option>
+                    <option value="react">Frontend React</option>
+                    <option value="angular">Frontend Angular</option>
+                </select>
+                <br>
+                Resume upload:
+                <input type="file" id="picture" name="picture" accept="image/png, image/jpeg">
+                <br>
+                Portfolio website:
+                <input type="text" name="website">
+                <br>
+                Salary requirements:
+                <input type="text" name="salary">
+                <br>
+                Are you willing to relocate?
+                <input type="radio" name="relocate" value="Yes"> Yes
+                <input type="radio" name="relocate" value="No"> No
+                <input type="radio" name="relocate" value="Not sure"> Not sure
+                <br>
+                Last company you worked for:
+                <input type="text" name="company">
+                <br>
+                Comments:<br>
+                <textarea name="comments" rows="6" cols="40" placeholder="Enter your comments here"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <hr>
+</body>
+</html>
